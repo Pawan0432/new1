@@ -31,15 +31,15 @@ export default function BuyerDetailsScreen() {
       setName(userInfo.name || '');
       setAddress(userInfo.address || '');
     } else {
-      Alert.alert('Error', 'User details not found in profile.');
+      Alert.alert('Error', 'User details not found');
     }
   };
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.heading}>Enter Buyer Details 🧾</Text>
+      <Text style={styles.heading}>Enter Your Details</Text>
 
-      <Text style={styles.label}>Full Name</Text>
+      <Text style={styles.label}>Name</Text>
       <TextInput
         style={styles.input}
         placeholder="Enter your full name"
@@ -81,7 +81,7 @@ export default function BuyerDetailsScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#f2f4f6', // Soft light gray for pleasant UX
+    backgroundColor: '#3B060A', 
     flexGrow: 1,
   },
   heading: {

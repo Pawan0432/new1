@@ -37,7 +37,7 @@ export default function BuyerDetailsScreen() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.heading}>Enter Buyer Details 🧾</Text>
+      <Text style={styles.heading}>Enter your Details</Text>
 
       <Text style={styles.label}>Full Name</Text>
       <TextInput
@@ -69,10 +69,10 @@ export default function BuyerDetailsScreen() {
         <Picker.Item label="Credit/Debit Card" value="Card" />
       </Picker>
 
-      <Button title="Autofill from Profile" color="#4b7bec" onPress={autofillDetails} />
+      <Button title="Autofill from Profile" color="#C83F12" onPress={autofillDetails} />
 
       <View style={styles.buttonContainer}>
-        <Button title="Proceed to Payment" color="#20bf6b" onPress={handleProceed} />
+        <Button title="Proceed to Payment" color="#8A0000" onPress={handleProceed} />
       </View>
     </ScrollView>
   );
@@ -81,23 +81,23 @@ export default function BuyerDetailsScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#f2f4f6', // Soft light gray for pleasant UX
+    backgroundColor: '#3B060A', // Soft light gray for pleasant UX
     flexGrow: 1,
   },
   heading: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 30,
-    color: '#2d3436', // Dark neutral
+    color: '#ffffff', // Dark neutral
     textAlign: 'center',
   },
   label: {
     fontSize: 16,
     marginBottom: 5,
-    color: '#34495e', // Slightly stronger label color
+    color: '#ffffff', // Slightly stronger label color
   },
   input: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#FFF287',
     borderRadius: 8,
     padding: 12,
     fontSize: 16,
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
   },
   picker: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#FFF287',
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#dcdde1',

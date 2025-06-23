@@ -72,7 +72,7 @@ export default function PaymentScreen() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>🧾 Payment Gateway (Demo)</Text>
+      <Text style={styles.title}>Payment Gateway</Text>
 
       <Text style={styles.label}>Product:</Text>
       <Text style={styles.value}>{product.title}</Text>
